@@ -17,14 +17,7 @@ $(document).ready(function () {
     var headingDate = moment().format('LLLL');
     $("#currentDay").text(headingDate);
 
-    //for (i = 9; i < 18; i++) {
-      //  if (prevHour < futureHour) {
-            
-        
-       //$(".form-control" + (i)).addClass("future");
-       //}
-
-    //}
+  
 
     for (i = 0; i < localStorage.length; i++) {
 
@@ -35,12 +28,7 @@ $(document).ready(function () {
 
     $(".saveBtn").on("click", function (event) {
 
-        //savedInput += $(this).val();
-        //localStorage.setItem(savedInput);
-        //$("value").text(savedInput);
-
-        //localStorage.setItem('form-control', JSON.stringify(savedInput))
-        //const data = JSON.parse(localStorage.getItem("form-control"))
+      
 
         var output = event.target.parentElement.previousElementSibling.value;
         var keyItem = event.target.id;
@@ -48,7 +36,6 @@ $(document).ready(function () {
 
 
 
-        //$("#final").text(key);    
 
 
     });
